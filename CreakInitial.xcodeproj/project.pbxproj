@@ -19,7 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		718458F728B9DFDC00AA1DD2 /* CreakInitial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CreakInitial.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		718458F728B9DFDC00AA1DD2 /* CreakInitial_AppKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CreakInitial_AppKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		718458FA28B9DFDC00AA1DD2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		718458FC28B9DFDC00AA1DD2 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		718458FE28B9DFDD00AA1DD2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -62,7 +62,7 @@
 		718458F828B9DFDC00AA1DD2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				718458F728B9DFDC00AA1DD2 /* CreakInitial.app */,
+				718458F728B9DFDC00AA1DD2 /* CreakInitial_AppKit.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -215,9 +215,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		718458F628B9DFDC00AA1DD2 /* CreakInitial */ = {
+		718458F628B9DFDC00AA1DD2 /* CreakInitial_AppKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7184590628B9DFDD00AA1DD2 /* Build configuration list for PBXNativeTarget "CreakInitial" */;
+			buildConfigurationList = 7184590628B9DFDD00AA1DD2 /* Build configuration list for PBXNativeTarget "CreakInitial_AppKit" */;
 			buildPhases = (
 				718458F328B9DFDC00AA1DD2 /* Sources */,
 				718458F428B9DFDC00AA1DD2 /* Frameworks */,
@@ -227,9 +227,9 @@
 			);
 			dependencies = (
 			);
-			name = CreakInitial;
+			name = CreakInitial_AppKit;
 			productName = CreakInitial;
-			productReference = 718458F728B9DFDC00AA1DD2 /* CreakInitial.app */;
+			productReference = 718458F728B9DFDC00AA1DD2 /* CreakInitial_AppKit.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -261,7 +261,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				718458F628B9DFDC00AA1DD2 /* CreakInitial */,
+				718458F628B9DFDC00AA1DD2 /* CreakInitial_AppKit */,
 			);
 		};
 /* End PBXProject section */
@@ -493,7 +493,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7184590628B9DFDD00AA1DD2 /* Build configuration list for PBXNativeTarget "CreakInitial" */ = {
+		7184590628B9DFDD00AA1DD2 /* Build configuration list for PBXNativeTarget "CreakInitial_AppKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7184590728B9DFDD00AA1DD2 /* Debug */,

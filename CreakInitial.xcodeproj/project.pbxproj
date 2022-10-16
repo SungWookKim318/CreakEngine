@@ -18,7 +18,32 @@
 		71E298AA28C5D898008B1036 /* CreckOGLRenderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71E298A828C5D898008B1036 /* CreckOGLRenderer.cpp */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		71724A0528FBBD4200DAF6AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7162607A28FAA0D80075E91A /* CreakEngine.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7162606E28FAA0D80075E91A;
+			remoteInfo = CreakEngineAppKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7162606328FA9F7B0075E91A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		7162607A28FAA0D80075E91A /* CreakEngine.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CreakEngine.xcodeproj; path = ../CreakEngine/CreakEngine.xcodeproj; sourceTree = "<group>"; };
+		7162610128FAA4D70075E91A /* CreckOGLRenderer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CreckOGLRenderer.hpp; sourceTree = "<group>"; };
 		718458F728B9DFDC00AA1DD2 /* CreakInitial_AppKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CreakInitial_AppKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		718458FA28B9DFDC00AA1DD2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		718458FC28B9DFDC00AA1DD2 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -36,7 +61,6 @@
 		71E298A528C5CAF8008B1036 /* basic.frag */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = basic.frag; sourceTree = "<group>"; };
 		71E298A728C5CEAB008B1036 /* CreakOpenGLFlags.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CreakOpenGLFlags.h; sourceTree = "<group>"; };
 		71E298A828C5D898008B1036 /* CreckOGLRenderer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = CreckOGLRenderer.cpp; path = CreakInitial/Core/common/opengl/source/CreckOGLRenderer.cpp; sourceTree = SOURCE_ROOT; };
-		71E298A928C5D898008B1036 /* CreckOGLRenderer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = CreckOGLRenderer.hpp; path = CreakInitial/Core/common/opengl/CreckOGLRenderer.hpp; sourceTree = SOURCE_ROOT; };
 		71E298AB28C5DD2B008B1036 /* CreakFlags.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CreakFlags.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -51,11 +75,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7162606028FA9F7B0075E91A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		71724A0228FBBD4200DAF6AB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				71724A0628FBBD4200DAF6AB /* CreakEngineAppKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		718458EE28B9DFDC00AA1DD2 = {
 			isa = PBXGroup;
 			children = (
 				718458F928B9DFDC00AA1DD2 /* CreakInitial */,
 				718458F828B9DFDC00AA1DD2 /* Products */,
+				7162606028FA9F7B0075E91A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +110,7 @@
 		718458F928B9DFDC00AA1DD2 /* CreakInitial */ = {
 			isa = PBXGroup;
 			children = (
+				7162607A28FAA0D80075E91A /* CreakEngine.xcodeproj */,
 				7184590A28B9E04F00AA1DD2 /* NonCore */,
 				7184590928B9E04300AA1DD2 /* Core */,
 				718458FA28B9DFDC00AA1DD2 /* AppDelegate.swift */,
@@ -137,8 +178,8 @@
 		7184590F28B9E13F00AA1DD2 /* header */ = {
 			isa = PBXGroup;
 			children = (
+				7162610128FAA4D70075E91A /* CreckOGLRenderer.hpp */,
 				7184591D28C1C57E00AA1DD2 /* CreckOGLHelper.hpp */,
-				71E298A928C5D898008B1036 /* CreckOGLRenderer.hpp */,
 			);
 			path = header;
 			sourceTree = "<group>";
@@ -222,6 +263,7 @@
 				718458F328B9DFDC00AA1DD2 /* Sources */,
 				718458F428B9DFDC00AA1DD2 /* Frameworks */,
 				718458F528B9DFDC00AA1DD2 /* Resources */,
+				7162606328FA9F7B0075E91A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -240,7 +282,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1340;
-				LastUpgradeCheck = 1340;
+				LastUpgradeCheck = 1400;
 				TargetAttributes = {
 					718458F628B9DFDC00AA1DD2 = {
 						CreatedOnToolsVersion = 13.4.1;
@@ -259,12 +301,28 @@
 			mainGroup = 718458EE28B9DFDC00AA1DD2;
 			productRefGroup = 718458F828B9DFDC00AA1DD2 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 71724A0228FBBD4200DAF6AB /* Products */;
+					ProjectRef = 7162607A28FAA0D80075E91A /* CreakEngine.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				718458F628B9DFDC00AA1DD2 /* CreakInitial_AppKit */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		71724A0628FBBD4200DAF6AB /* CreakEngineAppKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CreakEngineAppKit.framework;
+			remoteRef = 71724A0528FBBD4200DAF6AB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		718458F528B9DFDC00AA1DD2 /* Resources */ = {
@@ -340,6 +398,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -400,6 +459,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -428,9 +488,11 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = CreakInitial/CreakInitial.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = ZHU7MSDH9S;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -459,9 +521,11 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = CreakInitial/CreakInitial.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = ZHU7MSDH9S;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;

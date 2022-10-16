@@ -7,6 +7,7 @@
 
 import Foundation
 import AppKit
+import CreakCoreAppKit
 
 class CreakNSView: NSView {
     init() {
@@ -53,7 +54,7 @@ class CreakNSView: NSView {
         rendererView = nil
     }
     
-    private var rendererView: CreakOglNSView?
+    private(set) var rendererView: CreakOglNSView?
 }
 
 private extension CreakNSView {

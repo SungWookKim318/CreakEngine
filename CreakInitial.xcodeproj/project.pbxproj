@@ -7,15 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7107DBA828FBDA55007B66B2 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7107DBA728FBDA55007B66B2 /* libc++.tbd */; };
 		718458FB28B9DFDC00AA1DD2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718458FA28B9DFDC00AA1DD2 /* AppDelegate.swift */; };
 		718458FD28B9DFDC00AA1DD2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718458FC28B9DFDC00AA1DD2 /* MainViewController.swift */; };
 		718458FF28B9DFDD00AA1DD2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 718458FE28B9DFDD00AA1DD2 /* Assets.xcassets */; };
 		7184590228B9DFDD00AA1DD2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7184590028B9DFDD00AA1DD2 /* Main.storyboard */; };
-		7184591428B9E21500AA1DD2 /* CreakNSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7184591328B9E21500AA1DD2 /* CreakNSView.swift */; };
-		71E2989F28C5B2D5008B1036 /* CreakNSOGLView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 71E2989E28C5B2D5008B1036 /* CreakNSOGLView.mm */; };
-		71E298A428C5CABE008B1036 /* basic.vert in Resources */ = {isa = PBXBuildFile; fileRef = 71E298A328C5CABE008B1036 /* basic.vert */; };
-		71E298A628C5CAF8008B1036 /* basic.frag in Resources */ = {isa = PBXBuildFile; fileRef = 71E298A528C5CAF8008B1036 /* basic.frag */; };
-		71E298AA28C5D898008B1036 /* CreckOGLRenderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71E298A828C5D898008B1036 /* CreckOGLRenderer.cpp */; };
+		71A10EB328FBD59B00D0C94E /* CreakEngineAppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71724A0628FBBD4200DAF6AB /* CreakEngineAppKit.framework */; };
+		71A10EB428FBD59B00D0C94E /* CreakEngineAppKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 71724A0628FBBD4200DAF6AB /* CreakEngineAppKit.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,6 +22,13 @@
 			containerPortal = 7162607A28FAA0D80075E91A /* CreakEngine.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 7162606E28FAA0D80075E91A;
+			remoteInfo = CreakEngineAppKit;
+		};
+		71A10EB528FBD60800D0C94E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7162607A28FAA0D80075E91A /* CreakEngine.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 7162606D28FAA0D80075E91A;
 			remoteInfo = CreakEngineAppKit;
 		};
 /* End PBXContainerItemProxy section */
@@ -35,6 +40,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				71A10EB428FBD59B00D0C94E /* CreakEngineAppKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -42,26 +48,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		7107DBA728FBDA55007B66B2 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		7162607A28FAA0D80075E91A /* CreakEngine.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CreakEngine.xcodeproj; path = ../CreakEngine/CreakEngine.xcodeproj; sourceTree = "<group>"; };
-		7162610128FAA4D70075E91A /* CreckOGLRenderer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CreckOGLRenderer.hpp; sourceTree = "<group>"; };
 		718458F728B9DFDC00AA1DD2 /* CreakInitial_AppKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CreakInitial_AppKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		718458FA28B9DFDC00AA1DD2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		718458FC28B9DFDC00AA1DD2 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		718458FE28B9DFDD00AA1DD2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7184590128B9DFDD00AA1DD2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7184590328B9DFDD00AA1DD2 /* CreakInitial.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CreakInitial.entitlements; sourceTree = "<group>"; };
-		7184591328B9E21500AA1DD2 /* CreakNSView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreakNSView.swift; sourceTree = "<group>"; };
 		7184591728B9E99F00AA1DD2 /* CreakInitial-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CreakInitial-Bridging-Header.h"; sourceTree = "<group>"; };
-		7184591B28C1BEE500AA1DD2 /* CreakAppleFlags.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CreakAppleFlags.h; sourceTree = "<group>"; };
-		7184591C28C1C57E00AA1DD2 /* CreckOGLHelper.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CreckOGLHelper.cpp; sourceTree = "<group>"; };
-		7184591D28C1C57E00AA1DD2 /* CreckOGLHelper.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CreckOGLHelper.hpp; sourceTree = "<group>"; };
-		71E2989E28C5B2D5008B1036 /* CreakNSOGLView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CreakNSOGLView.mm; sourceTree = "<group>"; };
-		71E298A028C5B2E1008B1036 /* CreakNSOGLView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CreakNSOGLView.h; sourceTree = "<group>"; };
-		71E298A328C5CABE008B1036 /* basic.vert */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = basic.vert; sourceTree = "<group>"; };
-		71E298A528C5CAF8008B1036 /* basic.frag */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = basic.frag; sourceTree = "<group>"; };
-		71E298A728C5CEAB008B1036 /* CreakOpenGLFlags.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CreakOpenGLFlags.h; sourceTree = "<group>"; };
-		71E298A828C5D898008B1036 /* CreckOGLRenderer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = CreckOGLRenderer.cpp; path = CreakInitial/Core/common/opengl/source/CreckOGLRenderer.cpp; sourceTree = SOURCE_ROOT; };
-		71E298AB28C5DD2B008B1036 /* CreakFlags.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CreakFlags.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +64,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7107DBA828FBDA55007B66B2 /* libc++.tbd in Frameworks */,
+				71A10EB328FBD59B00D0C94E /* CreakEngineAppKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +75,7 @@
 		7162606028FA9F7B0075E91A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7107DBA728FBDA55007B66B2 /* libc++.tbd */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -111,8 +109,6 @@
 			isa = PBXGroup;
 			children = (
 				7162607A28FAA0D80075E91A /* CreakEngine.xcodeproj */,
-				7184590A28B9E04F00AA1DD2 /* NonCore */,
-				7184590928B9E04300AA1DD2 /* Core */,
 				718458FA28B9DFDC00AA1DD2 /* AppDelegate.swift */,
 				718458FC28B9DFDC00AA1DD2 /* MainViewController.swift */,
 				7184591728B9E99F00AA1DD2 /* CreakInitial-Bridging-Header.h */,
@@ -121,136 +117,6 @@
 				7184590328B9DFDD00AA1DD2 /* CreakInitial.entitlements */,
 			);
 			path = CreakInitial;
-			sourceTree = "<group>";
-		};
-		7184590928B9E04300AA1DD2 /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				7184591028B9E1ED00AA1DD2 /* apple */,
-				7184590D28B9E11F00AA1DD2 /* common */,
-			);
-			path = Core;
-			sourceTree = "<group>";
-		};
-		7184590A28B9E04F00AA1DD2 /* NonCore */ = {
-			isa = PBXGroup;
-			children = (
-				7184590E28B9E12500AA1DD2 /* apple */,
-			);
-			path = NonCore;
-			sourceTree = "<group>";
-		};
-		7184590B28B9E06000AA1DD2 /* source */ = {
-			isa = PBXGroup;
-			children = (
-				71E298A828C5D898008B1036 /* CreckOGLRenderer.cpp */,
-				7184591C28C1C57E00AA1DD2 /* CreckOGLHelper.cpp */,
-			);
-			path = source;
-			sourceTree = "<group>";
-		};
-		7184590C28B9E11500AA1DD2 /* macos */ = {
-			isa = PBXGroup;
-			children = (
-				7184591328B9E21500AA1DD2 /* CreakNSView.swift */,
-			);
-			path = macos;
-			sourceTree = "<group>";
-		};
-		7184590D28B9E11F00AA1DD2 /* common */ = {
-			isa = PBXGroup;
-			children = (
-				71E298AB28C5DD2B008B1036 /* CreakFlags.h */,
-				71E298A228C5CA86008B1036 /* opengl */,
-			);
-			path = common;
-			sourceTree = "<group>";
-		};
-		7184590E28B9E12500AA1DD2 /* apple */ = {
-			isa = PBXGroup;
-			children = (
-				7184591628B9E91500AA1DD2 /* iOS */,
-				7184590C28B9E11500AA1DD2 /* macos */,
-			);
-			path = apple;
-			sourceTree = "<group>";
-		};
-		7184590F28B9E13F00AA1DD2 /* header */ = {
-			isa = PBXGroup;
-			children = (
-				7162610128FAA4D70075E91A /* CreckOGLRenderer.hpp */,
-				7184591D28C1C57E00AA1DD2 /* CreckOGLHelper.hpp */,
-			);
-			path = header;
-			sourceTree = "<group>";
-		};
-		7184591028B9E1ED00AA1DD2 /* apple */ = {
-			isa = PBXGroup;
-			children = (
-				7184591B28C1BEE500AA1DD2 /* CreakAppleFlags.h */,
-				71E2989D28C5B2B1008B1036 /* ios */,
-				71E2989C28C5B2A4008B1036 /* macos */,
-			);
-			path = apple;
-			sourceTree = "<group>";
-		};
-		7184591128B9E1F700AA1DD2 /* source */ = {
-			isa = PBXGroup;
-			children = (
-				71E2989E28C5B2D5008B1036 /* CreakNSOGLView.mm */,
-			);
-			path = source;
-			sourceTree = "<group>";
-		};
-		7184591228B9E20200AA1DD2 /* header */ = {
-			isa = PBXGroup;
-			children = (
-				71E298A028C5B2E1008B1036 /* CreakNSOGLView.h */,
-			);
-			path = header;
-			sourceTree = "<group>";
-		};
-		7184591628B9E91500AA1DD2 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = iOS;
-			sourceTree = "<group>";
-		};
-		71E2989C28C5B2A4008B1036 /* macos */ = {
-			isa = PBXGroup;
-			children = (
-				7184591228B9E20200AA1DD2 /* header */,
-				7184591128B9E1F700AA1DD2 /* source */,
-			);
-			path = macos;
-			sourceTree = "<group>";
-		};
-		71E2989D28C5B2B1008B1036 /* ios */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ios;
-			sourceTree = "<group>";
-		};
-		71E298A128C5CA4E008B1036 /* shaders */ = {
-			isa = PBXGroup;
-			children = (
-				71E298A328C5CABE008B1036 /* basic.vert */,
-				71E298A528C5CAF8008B1036 /* basic.frag */,
-			);
-			path = shaders;
-			sourceTree = "<group>";
-		};
-		71E298A228C5CA86008B1036 /* opengl */ = {
-			isa = PBXGroup;
-			children = (
-				71E298A728C5CEAB008B1036 /* CreakOpenGLFlags.h */,
-				7184590F28B9E13F00AA1DD2 /* header */,
-				7184590B28B9E06000AA1DD2 /* source */,
-				71E298A128C5CA4E008B1036 /* shaders */,
-			);
-			path = opengl;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,6 +134,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				71A10EB628FBD60800D0C94E /* PBXTargetDependency */,
 			);
 			name = CreakInitial_AppKit;
 			productName = CreakInitial;
@@ -330,8 +197,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				718458FF28B9DFDD00AA1DD2 /* Assets.xcassets in Resources */,
-				71E298A428C5CABE008B1036 /* basic.vert in Resources */,
-				71E298A628C5CAF8008B1036 /* basic.frag in Resources */,
 				7184590228B9DFDD00AA1DD2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -343,15 +208,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				71E298AA28C5D898008B1036 /* CreckOGLRenderer.cpp in Sources */,
-				7184591428B9E21500AA1DD2 /* CreakNSView.swift in Sources */,
-				71E2989F28C5B2D5008B1036 /* CreakNSOGLView.mm in Sources */,
 				718458FD28B9DFDC00AA1DD2 /* MainViewController.swift in Sources */,
 				718458FB28B9DFDC00AA1DD2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		71A10EB628FBD60800D0C94E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CreakEngineAppKit;
+			targetProxy = 71A10EB528FBD60800D0C94E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		7184590028B9DFDD00AA1DD2 /* Main.storyboard */ = {

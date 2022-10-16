@@ -116,9 +116,9 @@ static CVReturn DisplayLinkCallback(CVDisplayLinkRef displayLink,
 
     _renderer = std::make_unique<Creak::CreakOGLRenderer>(0);
     _renderer->setup();
-
-    NSString *vertexPath = [[NSBundle mainBundle] pathForResource:@"basic" ofType:@"vert"];
-    NSString *fragPath = [[NSBundle mainBundle] pathForResource:@"basic" ofType:@"frag"];
+    NSBundle *coreBundle = [NSBundle bundleForClass:[self class]];
+    NSString *vertexPath = [coreBundle pathForResource:@"basic" ofType:@"vert"];
+    NSString *fragPath = [coreBundle pathForResource:@"basic" ofType:@"frag"];
     _renderer->createTestShader([[self loadFileWithBundleFileName:vertexPath] cStringUsingEncoding:NSASCIIStringEncoding], [[self loadFileWithBundleFileName:fragPath] cStringUsingEncoding:NSASCIIStringEncoding]);
     return TRUE;
 }

@@ -9,7 +9,7 @@ import Foundation
 import AppKit
 import CreakCoreAppKit
 
-class CreakNSView: NSView {
+public class CreakNSView: NSView {
     init() {
         super.init(frame: .zero)
         self.setup()
@@ -25,7 +25,7 @@ class CreakNSView: NSView {
         self.setup()
     }
     
-    override func awakeFromNib() {
+    public override func awakeFromNib() {
         super.awakeFromNib()
     }
     

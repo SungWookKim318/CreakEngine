@@ -1,0 +1,430 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		71B5C3C7290F9D7400C3111F /* CreakCoreAppKit.docc in Sources */ = {isa = PBXBuildFile; fileRef = 71B5C3C6290F9D7400C3111F /* CreakCoreAppKit.docc */; };
+		71B5C3D0290F9E1100C3111F /* CreckOGLRenderer.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 71B5C3CD290F9E1000C3111F /* CreckOGLRenderer.hpp */; settings = {ATTRIBUTES = (Private, ); }; };
+		71B5C3D1290F9E1100C3111F /* CreakFlags.h in Headers */ = {isa = PBXBuildFile; fileRef = 71B5C3CE290F9E1100C3111F /* CreakFlags.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		71B5C3D2290F9E1100C3111F /* CreckOGLHelper.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 71B5C3CF290F9E1100C3111F /* CreckOGLHelper.hpp */; settings = {ATTRIBUTES = (Private, ); }; };
+		71B5C3D9290F9E3700C3111F /* CreakAppleFlags.h in Headers */ = {isa = PBXBuildFile; fileRef = 71B5C3D5290F9E3700C3111F /* CreakAppleFlags.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		71B5C3DA290F9E3700C3111F /* CreakNSOGLView.h in Headers */ = {isa = PBXBuildFile; fileRef = 71B5C3D6290F9E3700C3111F /* CreakNSOGLView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		71B5C3DB290F9E3700C3111F /* CreakOpenGLFlags.h in Headers */ = {isa = PBXBuildFile; fileRef = 71B5C3D7290F9E3700C3111F /* CreakOpenGLFlags.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		71B5C3DF290F9E5400C3111F /* basic.vert in Resources */ = {isa = PBXBuildFile; fileRef = 71B5C3DD290F9E5400C3111F /* basic.vert */; };
+		71B5C3E0290F9E5400C3111F /* basic.frag in Resources */ = {isa = PBXBuildFile; fileRef = 71B5C3DE290F9E5400C3111F /* basic.frag */; };
+		71B5C3E4290F9E8000C3111F /* CreakNSOGLView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 71B5C3E2290F9E8000C3111F /* CreakNSOGLView.mm */; };
+		71B5C3E5290F9E8000C3111F /* CreckOGLRenderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71B5C3E3290F9E8000C3111F /* CreckOGLRenderer.cpp */; };
+		71B5C3E8290F9F7400C3111F /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71B5C3E7290F9F7400C3111F /* CoreVideo.framework */; };
+		71B5C3EA290F9F8400C3111F /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71B5C3E9290F9F8400C3111F /* AppKit.framework */; };
+		71B5C3EC290F9F8700C3111F /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71B5C3EB290F9F8700C3111F /* OpenGL.framework */; };
+		71B5C3EE290FA0E600C3111F /* CreakCoreAppKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 71B5C3ED290FA0E600C3111F /* CreakCoreAppKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		71B5C3C3290F9D7400C3111F /* CreakCoreAppKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CreakCoreAppKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		71B5C3C6290F9D7400C3111F /* CreakCoreAppKit.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = CreakCoreAppKit.docc; sourceTree = "<group>"; };
+		71B5C3CD290F9E1000C3111F /* CreckOGLRenderer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = CreckOGLRenderer.hpp; path = ../private_headers/CreckOGLRenderer.hpp; sourceTree = "<group>"; };
+		71B5C3CE290F9E1100C3111F /* CreakFlags.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CreakFlags.h; path = ../private_headers/CreakFlags.h; sourceTree = "<group>"; };
+		71B5C3CF290F9E1100C3111F /* CreckOGLHelper.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = CreckOGLHelper.hpp; path = ../private_headers/CreckOGLHelper.hpp; sourceTree = "<group>"; };
+		71B5C3D5290F9E3700C3111F /* CreakAppleFlags.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CreakAppleFlags.h; path = ../public_headers/CreakAppleFlags.h; sourceTree = "<group>"; };
+		71B5C3D6290F9E3700C3111F /* CreakNSOGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CreakNSOGLView.h; path = ../public_headers/CreakNSOGLView.h; sourceTree = "<group>"; };
+		71B5C3D7290F9E3700C3111F /* CreakOpenGLFlags.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CreakOpenGLFlags.h; path = ../public_headers/CreakOpenGLFlags.h; sourceTree = "<group>"; };
+		71B5C3DD290F9E5400C3111F /* basic.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = basic.vert; path = ../resources/basic.vert; sourceTree = "<group>"; };
+		71B5C3DE290F9E5400C3111F /* basic.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = basic.frag; path = ../resources/basic.frag; sourceTree = "<group>"; };
+		71B5C3E2290F9E8000C3111F /* CreakNSOGLView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = CreakNSOGLView.mm; path = ../sources/CreakNSOGLView.mm; sourceTree = "<group>"; };
+		71B5C3E3290F9E8000C3111F /* CreckOGLRenderer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CreckOGLRenderer.cpp; path = ../sources/CreckOGLRenderer.cpp; sourceTree = "<group>"; };
+		71B5C3E7290F9F7400C3111F /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		71B5C3E9290F9F8400C3111F /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		71B5C3EB290F9F8700C3111F /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		71B5C3ED290FA0E600C3111F /* CreakCoreAppKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CreakCoreAppKit.h; path = ../public_headers/CreakCoreAppKit.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		71B5C3C0290F9D7400C3111F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71B5C3E8290F9F7400C3111F /* CoreVideo.framework in Frameworks */,
+				71B5C3EA290F9F8400C3111F /* AppKit.framework in Frameworks */,
+				71B5C3EC290F9F8700C3111F /* OpenGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		716C10AD290F9D0F00CAA1F6 = {
+			isa = PBXGroup;
+			children = (
+				71B5C3E1290F9E6100C3111F /* Sources */,
+				71B5C3DC290F9E4500C3111F /* Resources */,
+				71B5C3D3290F9E2C00C3111F /* PublicHeaders */,
+				71B5C3CC290F9DF700C3111F /* PrivateHeaders */,
+				71B5C3C4290F9D7400C3111F /* CreakCoreAppKit */,
+				716C10B8290F9D1000CAA1F6 /* Products */,
+				71B5C3E6290F9F7400C3111F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		716C10B8290F9D1000CAA1F6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				71B5C3C3290F9D7400C3111F /* CreakCoreAppKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		71B5C3C4290F9D7400C3111F /* CreakCoreAppKit */ = {
+			isa = PBXGroup;
+			children = (
+				71B5C3C6290F9D7400C3111F /* CreakCoreAppKit.docc */,
+			);
+			path = CreakCoreAppKit;
+			sourceTree = "<group>";
+		};
+		71B5C3CC290F9DF700C3111F /* PrivateHeaders */ = {
+			isa = PBXGroup;
+			children = (
+				71B5C3CE290F9E1100C3111F /* CreakFlags.h */,
+				71B5C3CF290F9E1100C3111F /* CreckOGLHelper.hpp */,
+				71B5C3CD290F9E1000C3111F /* CreckOGLRenderer.hpp */,
+			);
+			name = PrivateHeaders;
+			sourceTree = "<group>";
+		};
+		71B5C3D3290F9E2C00C3111F /* PublicHeaders */ = {
+			isa = PBXGroup;
+			children = (
+				71B5C3ED290FA0E600C3111F /* CreakCoreAppKit.h */,
+				71B5C3D5290F9E3700C3111F /* CreakAppleFlags.h */,
+				71B5C3D6290F9E3700C3111F /* CreakNSOGLView.h */,
+				71B5C3D7290F9E3700C3111F /* CreakOpenGLFlags.h */,
+			);
+			name = PublicHeaders;
+			sourceTree = "<group>";
+		};
+		71B5C3DC290F9E4500C3111F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				71B5C3DE290F9E5400C3111F /* basic.frag */,
+				71B5C3DD290F9E5400C3111F /* basic.vert */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		71B5C3E1290F9E6100C3111F /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				71B5C3E2290F9E8000C3111F /* CreakNSOGLView.mm */,
+				71B5C3E3290F9E8000C3111F /* CreckOGLRenderer.cpp */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		71B5C3E6290F9F7400C3111F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				71B5C3EB290F9F8700C3111F /* OpenGL.framework */,
+				71B5C3E9290F9F8400C3111F /* AppKit.framework */,
+				71B5C3E7290F9F7400C3111F /* CoreVideo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		71B5C3BE290F9D7400C3111F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71B5C3DB290F9E3700C3111F /* CreakOpenGLFlags.h in Headers */,
+				71B5C3DA290F9E3700C3111F /* CreakNSOGLView.h in Headers */,
+				71B5C3D9290F9E3700C3111F /* CreakAppleFlags.h in Headers */,
+				71B5C3D1290F9E1100C3111F /* CreakFlags.h in Headers */,
+				71B5C3EE290FA0E600C3111F /* CreakCoreAppKit.h in Headers */,
+				71B5C3D2290F9E1100C3111F /* CreckOGLHelper.hpp in Headers */,
+				71B5C3D0290F9E1100C3111F /* CreckOGLRenderer.hpp in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		71B5C3C2290F9D7400C3111F /* CreakCoreAppKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 71B5C3CB290F9D7400C3111F /* Build configuration list for PBXNativeTarget "CreakCoreAppKit" */;
+			buildPhases = (
+				71B5C3BE290F9D7400C3111F /* Headers */,
+				71B5C3BF290F9D7400C3111F /* Sources */,
+				71B5C3C0290F9D7400C3111F /* Frameworks */,
+				71B5C3C1290F9D7400C3111F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CreakCoreAppKit;
+			productName = CreakCoreAppKit;
+			productReference = 71B5C3C3290F9D7400C3111F /* CreakCoreAppKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		716C10AE290F9D1000CAA1F6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					71B5C3C2290F9D7400C3111F = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 716C10B1290F9D1000CAA1F6 /* Build configuration list for PBXProject "CreakCore" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 716C10AD290F9D0F00CAA1F6;
+			productRefGroup = 716C10B8290F9D1000CAA1F6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				71B5C3C2290F9D7400C3111F /* CreakCoreAppKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		71B5C3C1290F9D7400C3111F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71B5C3E0290F9E5400C3111F /* basic.frag in Resources */,
+				71B5C3DF290F9E5400C3111F /* basic.vert in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		71B5C3BF290F9D7400C3111F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71B5C3C7290F9D7400C3111F /* CreakCoreAppKit.docc in Sources */,
+				71B5C3E5290F9E8000C3111F /* CreckOGLRenderer.cpp in Sources */,
+				71B5C3E4290F9E8000C3111F /* CreakNSOGLView.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		716C10BE290F9D1000CAA1F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		716C10BF290F9D1000CAA1F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		71B5C3C9290F9D7400C3111F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = ZHU7MSDH9S;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.SWKim.CreakCoreAppKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Debug;
+		};
+		71B5C3CA290F9D7400C3111F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = ZHU7MSDH9S;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.SWKim.CreakCoreAppKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		716C10B1290F9D1000CAA1F6 /* Build configuration list for PBXProject "CreakCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				716C10BE290F9D1000CAA1F6 /* Debug */,
+				716C10BF290F9D1000CAA1F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		71B5C3CB290F9D7400C3111F /* Build configuration list for PBXNativeTarget "CreakCoreAppKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71B5C3C9290F9D7400C3111F /* Debug */,
+				71B5C3CA290F9D7400C3111F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 716C10AE290F9D1000CAA1F6 /* Project object */;
+}

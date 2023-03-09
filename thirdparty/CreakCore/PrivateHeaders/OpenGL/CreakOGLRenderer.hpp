@@ -1,5 +1,5 @@
 //
-//  CreckOGLRenderer.hpp
+//  CreakOGLRenderer.hpp
 //  CreakInitial
 //
 //  Created by 김성욱 on 2022/09/05.

@@ -1,12 +1,13 @@
 //
-//  CreckOGLRenderer.cpp
+//  CreakOGLRenderer.cpp
 //  CreakInitial
 //
 //  Created by 김성욱 on 2022/09/05.
 //
 
-#include "../private_headers/CreckOGLRenderer.hpp"
-#include "../private_headers/CreakFlags.h"
+#include <CreakOGLRenderer.hpp>
+#include <CreakFlags.h>
+#include <CreakOpenGLFlags.h>
 #include <iostream>
 namespace Creak {
 namespace ShaderHelper {

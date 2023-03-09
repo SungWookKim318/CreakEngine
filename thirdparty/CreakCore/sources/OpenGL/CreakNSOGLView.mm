@@ -8,8 +8,8 @@
 
 #import <CoreVideo/CoreVideo.h>
 
-#import "../public_headers/CreakNSOGLView.h"
-#import "../private_headers/CreckOGLRenderer.hpp"
+#import "CreakNSOGLView.h"
+#import "CreakOGLRenderer.hpp"
 
 #include <memory>
 

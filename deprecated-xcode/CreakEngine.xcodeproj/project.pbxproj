@@ -61,7 +61,7 @@
 		71EEAE6B290FA91000D1EF7A /* CreakEngineAppKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CreakEngineAppKit.h; sourceTree = "<group>"; };
 		71EEAE6C290FA91000D1EF7A /* CreakEngineAppKit.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = CreakEngineAppKit.docc; sourceTree = "<group>"; };
 		71EEAE73290FA93900D1EF7A /* CreakCoreAppKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CreakCoreAppKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		71EEAE87290FA9AA00D1EF7A /* CreakNSView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreakNSView.swift; path = ../sources/swift/CreakNSView.swift; sourceTree = "<group>"; };
+		71EEAE87290FA9AA00D1EF7A /* CreakNSView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreakNSView.swift; sourceTree = "<group>"; };
 		71EEAEA5290FAA2F00D1EF7A /* CreakCore.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CreakCore.xcodeproj; path = ../thirdparty/CreakCore/Xcode/CreakCore.xcodeproj; sourceTree = "<group>"; };
 		71EEAEB4290FAB1D00D1EF7A /* CreakEngineMacTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CreakEngineMacTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71EEAEB6290FAB1D00D1EF7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -134,6 +134,7 @@
 				71EEAE86290FA99A00D1EF7A /* Swift */,
 			);
 			name = Sources;
+			path = ../sources;
 			sourceTree = "<group>";
 		};
 		71EEAE86290FA99A00D1EF7A /* Swift */ = {
@@ -142,6 +143,7 @@
 				71EEAE87290FA9AA00D1EF7A /* CreakNSView.swift */,
 			);
 			name = Swift;
+			path = swift;
 			sourceTree = "<group>";
 		};
 		71EEAEA4290FAA2000D1EF7A /* Thirdparty */ = {
@@ -150,6 +152,7 @@
 				71EEAEA5290FAA2F00D1EF7A /* CreakCore.xcodeproj */,
 			);
 			name = Thirdparty;
+			path = ../thirdparty;
 			sourceTree = "<group>";
 		};
 		71EEAEA6290FAA2F00D1EF7A /* Products */ = {

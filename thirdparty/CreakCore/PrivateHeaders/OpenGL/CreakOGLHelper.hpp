@@ -1,5 +1,5 @@
 //
-//  CreckOGLHelper.hpp
+//  CreakOGLHelper.hpp
 //  CreakInitial
 //
 //  Created by 김성욱 on 2022/09/02.
@@ -16,4 +16,4 @@ struct CreakGLEnumValue {
     constexpr static char* str = CreakGLEnumValue<glEnum>::str;
 };
 
-#include "../source/creckOGLHelper.cpp"
+#include "../source/CreakOGLHelper.cpp"

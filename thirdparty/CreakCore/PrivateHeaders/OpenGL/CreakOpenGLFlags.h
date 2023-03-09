@@ -6,6 +6,11 @@
 //
 
 #pragma once
+#ifdef __APPLE__
+#include <CreakAppleOGLFlags.h>
+#endif
+
+
 #if defined(CREAK_USE_OGL)
     #define GL_SILENCE_DEPRECATION
     #include <OpenGL/gl3.h>

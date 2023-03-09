@@ -8,7 +8,7 @@
 #pragma once
 
 #if defined(__APPLE__)
-#include "../public_headers/CreakAppleFlags.h"
+#include <CreakAppleFlags.h>
 #elif defined(_WIN32)
 
 #endif

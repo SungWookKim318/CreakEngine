@@ -113,9 +113,9 @@ endif()
 message(STATUS "=== Start Build CreakCore Framwork ===")
 include(ExternalProject)
 ExternalProject_Add(CreakCore
-SOURCE_DIR thirdparty/CreakCore
+SOURCE_DIR ${CMAKE_HOME_DIRECTORY}/thirdparty/CreakCore
 )
-add_subdirectory(thirdparty/CreakCore)
+add_subdirectory(${CMAKE_HOME_DIRECTORY}/thirdparty/CreakCore)
 list(APPEND DEPENDENCY_LIBRARY ${CreakCore})
 
 ###### Setup File List ######

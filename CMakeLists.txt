@@ -17,6 +17,7 @@ enable_language(Swift)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
+set(CMAKE_Swift_LANGUAGE_VERSION 5.5)
 # SET(CMAKE_OSX_ARCHITECTURES "x86_64;arm64" CACHE STRING "Build architectures for Mac OS X" FORCE)
 set(CMAKE_XCODE_ATTRIBUTE_ARCHS "$(ARCHS_STANDARD)")
 set(CMAKE_OSX_ARCHITECTURES "$(ARCHS_STANDARD)")
@@ -110,7 +111,11 @@ endif()
 
 ### Add CreakCore Library ###
 message(STATUS "=== Start Build CreakCore Framwork ===")
-add_subdirectory(CreakCore)
+include(ExternalProject)
+ExternalProject_Add(CreakCore
+SOURCE_DIR thirdparty/CreakCore
+)
+add_subdirectory(thirdparty/CreakCore)
 list(APPEND DEPENDENCY_LIBRARY ${CreakCore})
 
 ###### Setup File List ######
@@ -119,7 +124,7 @@ set(SOURCES
 )
 
 set(PUBLIC_SOURCES
-  swift/CreakNSView.swift
+  sources/swift/CreakNSView.swift
 )
 
 set(HEADERS
@@ -169,7 +174,7 @@ set_target_properties(${FRAMWORK_NAME} PROPERTIES
   RESOURCE ${BUNDLE_RESOURCES}
   # XCODE_ATTRIBUTE_CODE_SIGN_IDENTITY "iPhone Developer"
 )
-
+target_link_libraries(${FRAMWORK_NAME} ${CreakCore})
 ### Setup Auto Refence Count For Objective-C/C++ ###
 # if(NOT ARC_OFF)
 # # set_property (TARGET ${FRAMWORK_NAME} APPEND_STRING PROPERTY 

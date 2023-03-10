@@ -102,11 +102,13 @@ static CVReturn DisplayLinkCallback(CVDisplayLinkRef displayLink,
                name:NSWindowWillCloseNotification
              object:[self window]];
 }
+
 - (NSString *)loadFileWithBundleFileName:(NSString *)path
 {
     NSData *data = [NSData dataWithContentsOfFile:path];
     return [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
 }
+
 - (BOOL)setupOpenGL
 {
     [[self openGLContext] makeCurrentContext];

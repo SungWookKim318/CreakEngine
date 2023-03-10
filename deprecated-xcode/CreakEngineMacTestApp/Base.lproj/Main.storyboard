@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="21225"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="21507"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -732,16 +732,32 @@
                                     <action selector="createOpenGLAction:" target="XfG-lQ-9wD" id="zyN-vI-mKG"/>
                                 </connections>
                             </button>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="3Um-hv-dNS">
+                                <rect key="frame" x="13" y="383" width="164" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="2RB-Ax-uXP"/>
+                                </constraints>
+                                <buttonCell key="cell" type="push" title="Create Metal View" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="3q3-jL-rv1">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <color key="bezelColor" name="AccentColor"/>
+                                <connections>
+                                    <action selector="createMetalAction:" target="XfG-lQ-9wD" id="s7M-Kl-bBl"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <constraints>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="3Um-hv-dNS" secondAttribute="bottom" id="3PJ-Hz-IHJ"/>
                             <constraint firstItem="CUj-1R-N1s" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="30" id="7En-EA-a6Q"/>
-                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="CUj-1R-N1s" secondAttribute="bottom" id="8uB-cU-drW"/>
+                            <constraint firstItem="3Um-hv-dNS" firstAttribute="leading" secondItem="CUj-1R-N1s" secondAttribute="leading" id="7lf-dE-ADJ"/>
+                            <constraint firstItem="3Um-hv-dNS" firstAttribute="top" secondItem="CUj-1R-N1s" secondAttribute="bottom" constant="20" id="SR3-zR-1dU"/>
                             <constraint firstAttribute="trailing" secondItem="ovA-Rk-izT" secondAttribute="trailing" id="UFC-0e-Zvo"/>
                             <constraint firstItem="CUj-1R-N1s" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="VMf-bj-BPE"/>
                             <constraint firstAttribute="bottom" secondItem="ovA-Rk-izT" secondAttribute="bottom" id="WUQ-zc-ntm"/>
                             <constraint firstItem="ovA-Rk-izT" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" id="cM4-Zj-zeq"/>
                             <constraint firstItem="ovA-Rk-izT" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" id="crE-MA-a2b"/>
-                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="CUj-1R-N1s" secondAttribute="trailing" constant="20" id="tid-tq-OW5"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="3Um-hv-dNS" secondAttribute="trailing" id="pfN-lT-dRk"/>
                         </constraints>
                     </view>
                     <connections>

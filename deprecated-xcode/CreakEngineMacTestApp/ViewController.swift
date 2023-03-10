@@ -23,6 +23,11 @@ class ViewController: NSViewController {
     }
 
 
+    @IBAction func createMetalAction(_ sender: NSButton) {
+        print("try create openGL View")
+        let result = renderingView?.createMetalView()
+        print("result \(String(describing: result))")
+    }
     @IBAction func createOpenGLAction(_ sender: NSButton) {
         print("try create openGL View")
         let result = renderingView?.createOGLView()
